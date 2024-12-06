@@ -54,8 +54,6 @@ TIM_HandleTypeDef htim3;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-uint8_t HeartChar[] = {0x00, 0x00, 0x0a, 0x15, 0x11, 0x0a, 0x04, 0x00};
-uint8_t SmileyFaceChar[] = {0x00, 0x00, 0x0a, 0x00, 0x1f, 0x11, 0x0e, 0x00};
 statInfo_t_VL53L0X distanceStr;
 uint16_t distance=0;
 uint16_t angle=0;
@@ -76,9 +74,6 @@ uint16_t result=0;
 uint16_t angle_meas=0;
 uint16_t NBStep=0;
 double angle_meas_rad=0;
-uint16_t AD_RES = 0;
-uint8_t Stepper1_Dir = DIR_CW;
-uint8_t Stepper2_Dir = DIR_CM;
 
 /* USER CODE END PV */
 
