@@ -56,8 +56,6 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 uint8_t HeartChar[] = {0x00, 0x00, 0x0a, 0x15, 0x11, 0x0a, 0x04, 0x00};
 uint8_t SmileyFaceChar[] = {0x00, 0x00, 0x0a, 0x00, 0x1f, 0x11, 0x0e, 0x00};
-
-int onoff = 0;
 statInfo_t_VL53L0X distanceStr;
 uint16_t distance=0;
 uint16_t angle=0;
@@ -68,15 +66,15 @@ uint16_t distance_1=0;
 uint16_t distance_2=0;
 uint16_t angle_1=0;
 uint16_t angle_2=0;
-int meas1_Ok=0;
-int meas2_Ok=0;
-int distable=0;
-int distance_n_1=0;
-int distance_n_2=0;
-int distance_n_3=0;
-int result=0;
-int angle_meas=0;
-int NBStep=0;
+uint16_t meas1_Ok=0;
+uint16_t meas2_Ok=0;
+uint16_t distable=0;
+uint16_t distance_n_1=0;
+uint16_t distance_n_2=0;
+uint16_t distance_n_3=0;
+uint16_t result=0;
+uint16_t angle_meas=0;
+uint16_t NBStep=0;
 double angle_meas_rad=0;
 uint16_t AD_RES = 0;
 uint8_t Stepper1_Dir = DIR_CW;
@@ -533,6 +531,7 @@ void LCD_menu(void)
     I2C_LCD_SetCursor(MyI2C_LCD, 0, 1);
     I2C_LCD_WriteString(MyI2C_LCD, "BT3 = L BT4 = R ");
 }
+
 /* USER CODE END 4 */
 
 /**
